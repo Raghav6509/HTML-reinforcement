@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+* {box-sizing: border-box;}
+
+.container {
+  position: relative;
+  width: 50%;
+  max-width: 300px;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute; 
+  bottom: 0; 
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1; 
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+</style>
+</head>
+<body style="background-color:powderblue;">
+<div style="padding-left:550px">
+<h2 style="text align:center;">Endangered Animals</h2>
+<p>Here is a list of endangered animals.</p>
+</div>
+<ol>
+<li>Giant Panda
+<div class="container">
+  <img src="panda.jpg" alt="Avatar" class="image">
+  <div class="overlay">Giant Panda</div>
+</div>
+<li>Bengal Tiger
+<div class="container">
+  <img src="tiger.jfif" alt="Avatar" class="image">
+  <div class="overlay">Bengal Tiger</div>
+</div>
+
+<li>Koala
+<div class="container">
+  <img src="Koala.jpg" alt="Avatar" class="image">
+  <div class="overlay">Koala</div>
+</div>
+
+<li>Snow Leopard
+<div class="container">
+  <img src="leopard.jpg" alt="Avatar" class="image">
+  <div class="overlay">Snow Leopard</div>
+</div>
+
+<li>Bald Eagle
+<div class="container">
+  <img src="bald eagle.jpg" alt="Avatar" class="image">
+  <div class="overlay">Bald Eagle</div>
+</div>
+
+<li>Rhinoceros
+<div class="container">
+  <img src="rhino.jfif" alt="Avatar" class="image">
+  <div class="overlay">Rhinoceros</div>
+</div>
+
+
+
+</body>
+</html>
